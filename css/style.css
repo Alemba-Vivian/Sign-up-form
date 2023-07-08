@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* styling the body */
+body{
+    height: 100vh;
+}
+/* styling section */
+section{
+    display: flex;
+    flex-wrap: wrap;
+    
+    /* align-items: center; */
+ 
+}
+
+/* styling column1 of section */
+.column1{
+    background-image: url(../img/background-image.jpg);
+    background-repeat: no-repeat;
+    padding-top: 200px;
+    height: 100vh;
+    width: 40%;
+
+}
+#logo{
+    height: 80px;
+   
+}
+.logo-image{
+    background-color: black;
+    opacity: 0.4;
+    padding-left: 40px;
+
+}
+
+
+
+/* styling column2 of section */
+.column2{
+    flex: 1;
+    
+   
+  
+    
+ 
+
+}
+p.para1{
+
+}
+p.para2{
+    padding-top: 30px;
+}
+.content1{
+
+    padding-top: 100px;
+    background-color: lightgray;
+    padding-bottom: 40px;
+    padding: 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  
+}
+.content2{
+    background-color: white;
+    padding: 40px;
+   
+}
+form{
+    display: flex;
+   flex: 1;
+}
+form .form-column1, form .form-column2{
+    flex: 1;
+}
+
+.form-column1 div, .form-column2 div{
+    padding-bottom: 10px;
+}
+input{
+    padding: 5px;
+    border-radius:3px ;
+    border-style: solid;
+    border-color: lightgray;
+}
+.content2 h2{
+    padding-bottom: 30px;
+}
+.content3{
+    background-color: lightgrey;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+#btn-create-account{
+    background-color: #596D48;
+    color: white;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 40%;
+}
+.content3 h3{
+    padding-top: 40px;
+}
