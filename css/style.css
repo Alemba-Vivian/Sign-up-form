@@ -35,30 +35,60 @@ section{
 .column1{
     background-image: url(../img/background-image.jpg);
     background-repeat: no-repeat;
+    padding-top: 160px;
+    position: relative;
+    padding-bottom: 40px;
+    
 }
-#logo{
-    width: 30%;
-   
-}
-.logo-section{
-    background-color: black;
-    opacity: 0.4;
-    padding-left: 40px;
-  
-   
-
-}
-.column1 :is(ul li, p, a){
+.column1 :is(ul li, p, a, span){
     font-family: Norse-Bold;
     color: white;
     list-style-type: none;
 
 
 }
+#logo{
+ width: 30%;
+ 
+   
+}
+.logo-section{
+    background-color: black;
+    opacity: 0.4;
+  
+
+
+}
+.logo-section li>span{
+    font-size: 6rem;
+    padding-bottom: 40px;
+ 
+}
+.logo-section ul{
+    display: flex;
+    align-items: center;
+    justify-content: first baseline;
+    padding-right: 60px;
+   
+}
+
+.photo-credit{
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    padding-bottom: 10px;
+ 
+
+}
+.photo-credit :is(p){
+    text-align: center;
+}
 
 /* styling column2 of section */
 .column2{
     flex: 1;
+    padding-top: 80px;
+    background-color: #F5F5F5;
    
 }
 p.para1{
@@ -68,25 +98,35 @@ p.para2{
     padding-top: 30px;
 }
 .content1{
-
-    padding-top: 100px;
-    background-color: lightgray;
     padding-bottom: 40px;
     padding: 40px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bold;
+    
   
 }
 .content2{
     background-color: white;
-    padding: 40px;
+    /* padding: 40px; */
    
 }
-form{
-    display: flex;
-    
+
+.form-row1{
+     display: flex;
+     align-items: center;
+     gap: 100px;
+     flex-wrap: wrap;
+     /* box-shadow: 0px 3px 15px ; */
+     box-shadow: 0 8px 2px -2px lightgray;
+     padding: 20px;
+     padding-left: 40px;
+   
 }
-.form-column1 div, .form-column2 div{
+
+.form-row1 ul li{
+    list-style-type: none;
+}
+.form-row1 div, .form-row2 div{
     padding-bottom: 10px;
 }
 input{
@@ -95,24 +135,33 @@ input{
     border-style: solid;
     border-color: lightgray;
 }
+
 .content2 h2{
-    padding-bottom: 30px;
-}
-.content3{
-    background-color: lightgrey;
-    padding-left: 40px;
     padding-top: 20px;
+    padding-left: 40px;
+}
+
+.form-row2{
+    padding: 40px;
+
 }
 #btn-create-account{
-    background-color: #596D48;
+    background-color: var(--primary-color);
     color: white;
     border: none;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding: 15px;
     border-radius: 5px;
-    width: 40%;
+    font-weight: bold;
+    
 }
-.content3 h3{
-    padding-top: 40px;
+.form-row2 h3{
+    padding-top: 20px;
+    padding-bottom: 120px;
+    font-size: 1.0rem;
+}
+.form-row2 >h3>a{
+    color: var(--primary-color);
+    text-decoration: none;
 }

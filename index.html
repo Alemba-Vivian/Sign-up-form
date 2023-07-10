@@ -22,11 +22,12 @@
 
                 <div class="logo-section">
                     <ul>
-                        <li><a href=""> <img id="logo" src="./img/odin-logo.png" alt=""></a>ODIN</li>
+                        <li><img id="logo" src="./img/odin-logo.png" alt=""></li>
+                        <li>ODIN</li>
                     </ul>
                 </div>
 
-                <div>
+                <div class="photo-credit">
                     <p>Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a>
                         on <a href="https://unsplash.com/">Unsplash</a></p>
                 </div>
@@ -49,50 +50,74 @@
                     <h2>Let's do this!</h2>
 
                     <!-- sign up form -->
-                    <!-- first column -->
+                    <!-- first row -->
                     <form action="" method="">
-                        <div class="form-column1">
-                        <div>
-                            <label for="first-name">FIRST NAME</label> <br>
-                            <input type="text" id="first-name" name="first-name" placeholder="Thor" required>
+                        <div class="form-row1">
+                            <div class="input-fields1">
+                                <ul>
+                                    <li>
+                                        <div class="name">
+                                            <label for="first-name">FIRST NAME</label> <br>
+                                            <input type="text" id="first-name" name="first-name" placeholder="Thor" required>
+                                        </div>
+                                    </li>
+                    
+                                    <li>
+                                        <div class="email">
+                                            <label for="email-address">EMAIL</label> <br>
+                                            <input type="email" id="email-address" name="email-address" required>
+                                        </div>
+                                    </li>
+                                    <li>
+                    
+                                        <div class="password">
+                                            <label for="my-password">PASSWORD</label><br>
+                                            <input type="password" id="my-password" name="password" required>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                    
+                            <div class="input-fields2">
+                                <ul>
+                                    <li>
+                                        <div class="last-name">
+                                            <label for="last-name">LAST NAME</label> <br>
+                                            <input type="text" id="last-name" name="last-name" placeholder="Odinson" required>
+                                        </div>
+                                    </li>
+                    
+                                    <li>
+                                        <div class="my-number">
+                                            <label for="phone-number">PHONE NUMBER</label> <br>
+                                            <input type="number" id="phone-number" name="phone-number" required>
+                                        </div>
+                                    </li>
+                    
+                                    <li>
+                                        <div class="confirm-password">
+                                            <label for="my-password2">CONFIRM PASSWORD</label><br>
+                                            <input type="password" id="my-password2" name="my-password2" required>
+                                        </div>
+                                    </li>
+                                </ul>
+                    
+                            </div>
+                    
                         </div>
+                    
+                        <!-- second row -->
+                     
+                    
+                            <div class="form-row2">
+                                <button id="btn-create-account" type="submit">CREATE ACCOUNT</button>
+                                <h3>Already have an account? <a href="#">Log in</a></h3>
+                    
+                            
+                          </div>
+                    
+                    </form>
 
-                        <div>
-                            <label for="email-address">EMAIL</label> <br>
-                            <input type="email" id="email-address" name="email-address" required>
-                        </div>
-
-                        <div>
-                            <label for="my-password">PASSWORD</label><br>
-                            <input type="password" id="my-password" name="password" required>
-                        </div>
-
-                        <div>
-                            <button id="btn-create-account" type="submit">CREATE ACCOUNT</button>  
-                            <h3>Already have an account? <span>Log in</span></h3>
-
-                        </div>
-                     </div>
-
-                    <!-- second column -->
-                    <div class="form-column2">
-                        <div>
-                            <label for="last-name">LAST NAME</label> <br>
-                            <input type="text" id="last-name" name="last-name" placeholder="Odinson" required>
-                        </div>
-
-                        <div>
-                            <label for="phone-number">PHONE NUMBER</label> <br>
-                            <input type="number" id="phone-number" name="phone-number" required>
-                        </div>
-                        
-                        <div>
-                            <label for="my-password2">CONFIRM PASSWORD</label><br>
-                            <input type="password" id="my-password2" name="my-password2" required>
-                        </div>
-                        </div>
-
-                 </form>
                 </div>
 
             </div>
