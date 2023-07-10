@@ -2,7 +2,6 @@
 :root{
     --primary-color:#596D48;
     --secondary-color:#E5E7EB;
-    --correct-color:green;
     --error-color:red;
     --selected-input-border-color:blue;
 
@@ -35,6 +34,7 @@ section{
 .column1{
     background-image: url(../img/background-image.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     padding-top: 160px;
     position: relative;
     padding-bottom: 40px;
@@ -88,7 +88,7 @@ section{
 .column2{
     flex: 1;
     padding-top: 80px;
-    background-color: #F5F5F5;
+    background-color: #F8F8FF;
    
 }
 p.para1{
@@ -102,6 +102,8 @@ p.para2{
     padding: 40px;
     font-size: 1.1rem;
     font-weight: bold;
+    line-height: 1.5rem;
+    letter-spacing: 1.2;
     
   
 }
@@ -133,8 +135,26 @@ input{
     padding: 5px;
     border-radius:3px ;
     border-style: solid;
-    border-color: lightgray;
+    border-color: var(--secondary-color);
 }
+input[type="password"]{
+    border-color: var(--error-color);
+}
+
+input:focus{
+    outline: none !important;
+    border-color: var(--selected-input-border-color);
+    box-shadow: 0 0 8px #719ECE;
+   
+    
+}
+input:valid{
+     border-color: green;
+}
+
+/* input:invalid{ */
+    /* border-color: var(--error-color); */ */
+/* } */
 
 .content2 h2{
     padding-top: 20px;
