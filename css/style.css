@@ -118,11 +118,16 @@ p.para2{
      align-items: center;
      gap: 100px;
      flex-wrap: wrap;
+      padding-left: 40px;
      /* box-shadow: 0px 3px 15px ; */
      box-shadow: 0 8px 2px -2px lightgray;
      padding: 20px;
-     padding-left: 40px;
+    
    
+}
+.content2>h2{
+    padding-left: 40px;
+    padding-top: 20px;
 }
 
 .form-row1 ul li{
@@ -156,9 +161,10 @@ input:valid{
     /* border-color: var(--error-color); */ */
 /* } */
 
-.content2 h2{
+#heading{
+    padding: 40px;
     padding-top: 20px;
-    padding-left: 40px;
+  
 }
 
 .form-row2{
