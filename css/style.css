@@ -1,7 +1,21 @@
+/* css variables */
+:root{
+    --primary-color:#596D48;
+    --secondary-color:#E5E7EB;
+    --correct-color:green;
+    --error-color:red;
+    --selected-input-border-color:blue;
+
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+/* using custom fonts */
+@font-face {
+    font-family: Norse-Bold;
+    src: url(../fonts/Norse-Bold.otf);
 }
 /* styling the body */
 body{
@@ -11,6 +25,7 @@ body{
 section{
     display: flex;
     flex-wrap: wrap;
+    height: 100vh;
     
     /* align-items: center; */
  
@@ -20,33 +35,31 @@ section{
 .column1{
     background-image: url(../img/background-image.jpg);
     background-repeat: no-repeat;
-    padding-top: 200px;
-    height: 100vh;
-    width: 40%;
-
 }
 #logo{
-    height: 80px;
+    width: 30%;
    
 }
-.logo-image{
+.logo-section{
     background-color: black;
     opacity: 0.4;
     padding-left: 40px;
+  
+   
 
 }
+.column1 :is(ul li, p, a){
+    font-family: Norse-Bold;
+    color: white;
+    list-style-type: none;
 
 
+}
 
 /* styling column2 of section */
 .column2{
     flex: 1;
-    
    
-  
-    
- 
-
 }
 p.para1{
 
@@ -71,12 +84,8 @@ p.para2{
 }
 form{
     display: flex;
-   flex: 1;
+    
 }
-form .form-column1, form .form-column2{
-    flex: 1;
-}
-
 .form-column1 div, .form-column2 div{
     padding-bottom: 10px;
 }
