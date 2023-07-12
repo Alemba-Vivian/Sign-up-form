@@ -154,9 +154,9 @@ input{
     border-style: solid;
     border-color: var(--secondary-color);
 }
-input[type="password"]{
+/* input[type="password"]{
     border-color: var(--error-color);
-}
+} */
 
 input:focus{
     outline: none !important;
