@@ -38,6 +38,7 @@ section{
     padding-top: 160px;
     position: relative;
     padding-bottom: 40px;
+    width: 40%;
     
 }
 .column1 :is(ul li, p, a, span){
@@ -48,27 +49,38 @@ section{
 
 }
 #logo{
- width: 30%;
+
+  width: 100px;
+ /* height: 100px; */ 
  
    
 }
+span#odin{
+    font-size: 9rem;
+   
+}
+
+
 .logo-section{
     background-color: black;
     opacity: 0.4;
   
+   
+  
 
 
 }
-.logo-section li>span{
+/* .logo-section li>span{
     font-size: 6rem;
     padding-bottom: 40px;
  
-}
+} */
 .logo-section ul{
     display: flex;
     align-items: center;
     justify-content: first baseline;
     padding-right: 60px;
+    flex-wrap: wrap;
    
 }
 
